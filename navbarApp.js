@@ -12,7 +12,7 @@
 		$(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
 			console.log("srollTop : "+$(this).scrollTop());
-			if ($(this).scrollTop() < 100) {
+			if ($(this).scrollTop() < 50) {
 				$('.navbar').fadeIn();
 			} else {
 				$('.navbar').fadeOut();
