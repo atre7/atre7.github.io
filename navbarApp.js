@@ -24,6 +24,7 @@
 
 $('.collapse a').click(function(){
 	console.log("klikol na a ");
+	$('.navbar').fadeOut();
 });
 
 });
