@@ -26,7 +26,7 @@ $('.collapse a').click(function(){
 	console.log("klikol na a ");
 	//$('.navbar').fadeOut();
 	//$('#menuBtn').removeClass("navbar-toggle");
-	$('#myNvb').collapse();
+	$('#menuBtn').collapse();
 });
 
 });
