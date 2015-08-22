@@ -21,10 +21,9 @@
 
 	
 	});
-$(function (){
+
 $("a").click(function(){
 	console.log("klikol na a ");
-})
 });
 
 });
