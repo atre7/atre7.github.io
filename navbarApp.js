@@ -22,7 +22,7 @@
 	
 	});
 
-$('a').click(function(){
+$('.collapse a').click(function(){
 	console.log("klikol na a ");
 });
 
