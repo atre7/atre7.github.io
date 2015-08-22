@@ -8,6 +8,7 @@
 	
 	// fade in .navbar
 	$(function () {
+		console.log("tu si "+ $(this));
 		$(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
 			console.log("srollTop : "+$(this).scrollTop());
