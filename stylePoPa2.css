@@ -24,7 +24,7 @@ h6 {
 }
 
 section.galery {
-  padding: 50px;
+  padding: 100px 50px 50px 50px;
   background: #000000 no-repeat center center fixed;
   background-size: cover;
   min-height: 100% !important;
