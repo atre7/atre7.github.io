@@ -28,7 +28,7 @@ section.galery {
   background: #f8f8f8 no-repeat center center fixed;
   background-size: cover;
 
-  max-height: 100vh !important;
+  max-height: 100% !important;
 }
 /*
 .MaxHeight {
