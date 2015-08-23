@@ -29,11 +29,11 @@ section.galery {
   background-size: cover;
   max-height: 50vh !important;
 }
-/*
+
 .MaxHeight {
   height: 50vh !important;
 }
-
+/*
 .carouselFoto img {
   width: auto;
   height: 300px;
