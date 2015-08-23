@@ -29,10 +29,11 @@ section.galery {
   background-size: cover;
   max-height: 100vh;
 }
+/*
 .MaxHeight {
   height: 50vh !important;
 }
-
+*/
 
 .topnav {
     font-size: 16px;
