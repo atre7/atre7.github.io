@@ -27,7 +27,10 @@ section.galery {
   background: #f8f8f8 no-repeat center center fixed;
   
   background-size: cover;
-  max-height: 80vh;
+  max-height: 100vh;
+}
+#cMaxHeight {
+  height: 80vh;
 }
 
 .topnav {
