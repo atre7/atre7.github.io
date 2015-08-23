@@ -30,7 +30,7 @@ section.galery {
   max-height: 100vh;
 }
 #cMaxHeight {
-  height: 80vh;
+  height: 80vh !important;
 }
 
 .topnav {
