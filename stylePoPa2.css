@@ -30,6 +30,11 @@ section.galery {
   min-height: 100% !important;
   max-height: 100% !important;
 }
+.img-responsive {
+  display:block;
+  height:200;
+  max-width:100% ;
+}
 /*
 .MaxHeight {
   height: 50vh !important;
