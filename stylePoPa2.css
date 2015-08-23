@@ -24,8 +24,23 @@ h6 {
 }
 .blackstripe {
   background: black;
-  border :50px solid #1c1c1c;
+  border :0px solid #1c1c1c;
   
+}
+#blackstripe1 {
+  border: 5px solid #0E0E00;
+}
+#blackstripe2 {
+  border: 5px solid #0F0F00;
+}
+#blackstripe3 {
+  border: 5px solid #272719;
+}
+#blackstripe4 {
+  border: 5px solid #3F3F33;
+}
+#blackstripe5 {
+  border: 5px solid #57574D;
 }
 
 section.galery {
@@ -33,12 +48,14 @@ section.galery {
   background: #000000 no-repeat center center fixed;
   background-size: cover;
   /*min-height: 100% !important;*/
-  height: 100% !important;
+  height: 100% ;
+  box-sizing: border-box;
 }
 #galeria {
   position: relative;
-  top:100px;
+  top:0px;
 }
+
 /*
 .img-responsive {
   display:block;
