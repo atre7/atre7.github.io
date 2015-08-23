@@ -15,14 +15,17 @@ if($(window).height() < 400){
 
 		$(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
-			//console.log("srollTop : "+$(this).scrollTop());
-			if ($(this).scrollTop() < 50) {
+			console.log("srollTop : "+$(this).scrollTop());
+			if ($(this).scrollTop() < 100) {
 				$('.navbar1').fadeIn();
 			} else {
 				$('.navbar').fadeOut();
 			}
 		});
 	});
+}
+else{
+	$('.navbar1').fadeIn();
 }
 
 $('.collapse a').click(function(){
