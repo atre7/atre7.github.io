@@ -19,10 +19,11 @@ h6 {
 
 .blackdiv {
   background: black;
+  border :10px solid red;
   height: 10 px;
 }
 
-section #galery {
+section .galery {
   background: white;
   height: 100vh;
 }
