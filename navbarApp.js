@@ -5,22 +5,25 @@
     console.log("window height " +$(window).height());
     console.log("doc height "+ $(document).height());
     console.log("screen height " + screen.height);
+	
+if($(window).height() < 400){
 	// hide .navbar first
-	//$(".navbar").hide();
+	$(".navbar").hide();
 	
 	// fade in .navbar
 	$(function () {
 
 		$(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
-			console.log("srollTop : "+$(this).scrollTop());
+			//console.log("srollTop : "+$(this).scrollTop());
 			if ($(this).scrollTop() < 50) {
-			//	$('.navbar1').fadeIn();
+				$('.navbar1').fadeIn();
 			} else {
-				//$('.navbar').fadeOut();
+				$('.navbar').fadeOut();
 			}
 		});
 	});
+}
 
 $('.collapse a').click(function(){
 	console.log("klikol na a ");
