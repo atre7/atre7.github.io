@@ -27,7 +27,7 @@ section.galery {
   padding: 25px;
   background: #f8f8f8 no-repeat center center fixed;
   background-size: cover;
-  max-height: 80vh !important;
+  max-height: 100vh !important;
 }
 /*
 .MaxHeight {
