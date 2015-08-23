@@ -6,7 +6,7 @@
     console.log("doc height "+ $(document).height());
     console.log("screen height " + screen.height);
 	
-if($(window).height() < 400){
+if($(window).height() < 800){
 	// hide .navbar first
 	$(".navbar").hide();
 	
