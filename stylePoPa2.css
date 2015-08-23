@@ -24,7 +24,8 @@ h6 {
 }
 
 section .galery {
-  background: white;
+  background: white no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
 }
 
