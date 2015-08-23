@@ -51,7 +51,7 @@ section.galery {
     font-size: 16px;
     border: 1px outset rgba(28, 28, 28, 0.1);
     background: rgba(28, 28, 28, 1);
-    box-shadow: 0px 3px rgba(200, 200, 200, 0.1);
+   /* box-shadow: 0px 3px rgba(200, 200, 200, 0.1); */
     color: #fff;
 }
 
