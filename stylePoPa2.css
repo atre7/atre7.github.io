@@ -186,10 +186,8 @@ hr.intro-divider {
 /* about section 2*/
 .content-section-a {
     padding: 50px 0;
-    
-    background: url('https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg') no-repeat center center fixed;
     background: url('vodaRes.jpg') no-repeat center center fixed ;
-  
+    background-color: #ff00cc;
  
     background-size: cover;
     height: 110vh;
