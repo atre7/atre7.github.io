@@ -33,7 +33,11 @@ section.galery {
   background: #000000 no-repeat center center fixed;
   background-size: cover;
   /*min-height: 100% !important;*/
-  max-height: 100% !important;
+  height: 100% !important;
+}
+#galeria {
+  position: relative;
+  top:100px;
 }
 /*
 .img-responsive {
