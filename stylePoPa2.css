@@ -32,6 +32,9 @@ section.galery {
 #cMaxHeight {
   height: 80vh !important;
 }
+.carousel-inner {
+  height: 80vh !important;
+}
 
 .topnav {
     font-size: 16px;
