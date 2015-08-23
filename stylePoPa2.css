@@ -34,6 +34,11 @@ section.galery {
   height: 50vh !important;
 }
 */
+.carouselFoto img {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+}
 
 .topnav {
     font-size: 16px;
