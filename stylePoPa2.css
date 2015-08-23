@@ -187,7 +187,7 @@ hr.intro-divider {
 .content-section-a {
     padding: 50px 0;
     background: url('vodaRes.jpg') no-repeat center center fixed ;
-    background-color: #ff00cc;
+    background-color: #ff00cc center center fixed;
  
     background-size: cover;
     height: 110vh;
