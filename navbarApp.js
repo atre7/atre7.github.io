@@ -6,6 +6,28 @@
 
   $(document).ready(function() {
 
+    $(function() {
+      //This enabled Smooth-Scroll via Click
+      $(".navbar a").on('click', function(event) {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        var hash = this.hash;
+        //Uses Animate to Allow the Smooth Scrolling
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      });
+      //End-SmoothScroll Script
+      //Enable #.active move when clicked
+      $(".nav a").on("click", function() {
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+      //End .active move script
+
+    });
     //
     console.log("window height " + $(window).height());
     console.log("doc height " + $(document).height());
