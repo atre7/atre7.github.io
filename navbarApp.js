@@ -32,10 +32,21 @@
     console.log("window height " + $(window).height());
     console.log("doc height " + $(document).height());
     console.log("screen height " + screen.height);
+
+    // print on screen width height
     $('#pWidthWindow').text("windov width : " + $(window).width());
     $('#pHeightWindow').text("window height : " + $(window).height());
     $('#pWidthScreen').text("screen width : " + screen.width);
     $('#pHeightSreen').text("screen height : " + screen.height);
+    // on resize
+    $(window).resize(function() {
+      $('#pWidthWindow').text("windov width : " + $(window).width());
+      $('#pHeightWindow').text("window height : " + $(window).height());
+      $('#pWidthScreen').text("screen width : " + screen.width);
+      $('#pHeightSreen').text("screen height : " + screen.height);
+    });
+
+    // end print
     if ($(window).height() < 800) {
       // hide .navbar first
       $(".navbar").hide();
