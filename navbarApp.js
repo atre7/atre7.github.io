@@ -97,7 +97,7 @@
           $('.navbar').fadeOut();
 
         }
-        if (actPos < prevPos - 50) {
+        if (actPos < prevPos - 35) {
           moveUp = actPos;
           prevPos = actPos;
           console.log("moveUp " + actPos);
