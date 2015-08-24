@@ -72,9 +72,9 @@
           // set distance user needs to scroll before we fadeIn navbar
           console.log("srollTop : " + $(this).scrollTop());
           if ($(this).scrollTop() < 100) {
-            $('.navbar').fadeIn();
+          //  $('.navbar').fadeIn();
           } else {
-            $('.navbar').fadeOut();
+            //  $('.navbar').fadeOut();
           }
         });
       });
@@ -82,6 +82,29 @@
       $('.navbar').fadeIn();
     }
 
+    // show navbar onscroll up
+    // hide        onscroll down
+    var prevPos = 0;
+    var moveDown = 0;
+    var moveUp = 0;
+    $(function() {
+      $(window).scroll(function() {
+        var actPos = $(this).scrollTop();
+        if (actPos > prevPos + 50) {
+          moveDown = actPos;
+          prevPos = actPos;
+          console.log("moveDown " + actPos);
+          $('.navbar').fadeOut();
+
+        }
+        if (actPos < prevPos - 50) {
+          moveUp = actPos;
+          prevPos = actPos;
+          console.log("moveUp " + actPos);
+          $('.navbar').fadeIn();
+        }
+      });
+    });
 
     $('.collapse a').click(function() {
       console.log("klikol na a ");
