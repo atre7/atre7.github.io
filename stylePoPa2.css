@@ -558,12 +558,32 @@ p.copyright {
     -moz-border-radius: 0 7px 7px 0;
     border-radius: 0 7px 7px 0;
 }
-@media (orientation:landscape){
+@media (orientation:landscape)and (max-width:480px){
   .refprosharer {
       opacity: 0.0;
       position: fixed;
       left: 0;
-      top: 50px;
+      top: 150px;
+      z-index: 1000;
+      width: 65px;
+      height: auto;
+      color: #666666;
+      background-color: #1f94b3;
+      border: 1px solid #999999;
+      border-right-width: 0;
+      text-align: center;
+      -webkit-border-radius: 0 7px 7px 0;
+      -moz-border-radius: 0 7px 7px 0;
+      border-radius: 0 7px 7px 0;
+  }
+}
+
+@media (max-width:321px){
+  .refprosharer {
+      opacity: 0.0;
+      position: fixed;
+      left: 0;
+      top: 150px;
       z-index: 1000;
       width: 65px;
       height: auto;
