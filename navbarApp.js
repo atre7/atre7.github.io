@@ -19,6 +19,20 @@
           window.location.hash = hash;
         });
       });
+
+      $(".animBottom a").on('click', function(event) {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        var hash = this.hash;
+        //Uses Animate to Allow the Smooth Scrolling
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      });
+
+
       //End-SmoothScroll Script
       //Enable #.active move when clicked
       $(".nav a").on("click", function() {
