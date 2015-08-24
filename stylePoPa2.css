@@ -558,7 +558,7 @@ p.copyright {
     -moz-border-radius: 0 7px 7px 0;
     border-radius: 0 7px 7px 0;
 }
-@media (orientation:landscape)and (max-width:480px){
+@media (orientation:landscape)and (max-width:640px){
   .refprosharer {
       opacity: 0.0;
       position: fixed;
@@ -578,7 +578,7 @@ p.copyright {
   }
 }
 
-@media (max-width:321px){
+@media (max-width:360px){
   .refprosharer {
       opacity: 0.0;
       position: fixed;
