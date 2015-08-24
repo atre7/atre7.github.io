@@ -15,7 +15,9 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
+.intro-message >p{
+  color: black;
+}
 
 .blackdiv {
   background: black;
