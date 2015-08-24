@@ -96,6 +96,7 @@
           prevPos = actPos;
           console.log("moveDown " + actPos);
           $('.navbar').fadeOut();
+          $('.refprosharer').fadeOut();
 
         }
         if (actPos < prevPos - 35) {
@@ -103,6 +104,7 @@
           prevPos = actPos;
           console.log("moveUp " + actPos);
           $('.navbar').fadeIn();
+          $('.refprosharer').fadeIn();
         }
       });
     });
