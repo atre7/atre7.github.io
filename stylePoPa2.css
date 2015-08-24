@@ -50,7 +50,7 @@ section.galery {
   background: #000000 no-repeat center center fixed;
   background-size: cover;
   /*min-height: 100% !important;*/
-  height: 100% ;
+  height: auto ;
   box-sizing: border-box;
 }
 #galeria {
