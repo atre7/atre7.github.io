@@ -311,9 +311,7 @@ section#portfolio {
   color: #000;
 }
 
-.small-text {
-  color: white;
-}
+
 
 /*.portfolio-item {
   overflow: hidden;
@@ -440,6 +438,7 @@ section#portfolio {
     background-size: cover;
     height: 755px;
     height: 90vh;
+    height: auto;
 }
 @media (max-height:400px ){
  .banner {
@@ -500,7 +499,7 @@ p.connect {
 @media (orientation:landscape){
   .banner {
     padding-top: 50px;
-   height: 150vh;
+   height: auto;
   }
 }
 
@@ -519,4 +518,7 @@ p.copyright {
 .whiteText a,p,li {
 
   color:white;
+}
+.small-text {
+  color: white !important;
 }
