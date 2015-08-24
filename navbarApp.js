@@ -2,7 +2,11 @@
 
 
 (function($) {
+
+
   $(document).ready(function() {
+
+    //
     console.log("window height " + $(window).height());
     console.log("doc height " + $(document).height());
     console.log("screen height " + screen.height);
