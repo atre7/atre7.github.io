@@ -308,7 +308,7 @@ section#portfolio {
   color: #000;
 }
 
-#small-text {
+.small-text {
   color: white;
 }
 
@@ -511,7 +511,7 @@ p.copyright {
   /*  margin: 15px 0 0;*/
 }
 
-#whiteText a,p,li {
+.whiteText a,p,li {
 
   color:white;
 }
