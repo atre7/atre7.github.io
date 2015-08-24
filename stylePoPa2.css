@@ -57,7 +57,11 @@ section.galery {
   position: relative;
   top:0px;
 }
-
+@media (orientation:portrait){
+  section.galery{
+    height: auto;
+  }
+}
 /*
 .img-responsive {
   display:block;
@@ -133,7 +137,11 @@ color: #000;
   height: 600px;
  }
 }
-
+@media (orientation:portrait){
+  .intro-header{
+    height: auto;
+  }
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -225,7 +233,11 @@ hr.intro-divider {
   height: 600px;
  }
 }
-
+@media (orientation:portrait){
+  .content-section-a{
+    height: auto;
+  }
+}
   /*self-taught*/
 .link {
   color: black;
