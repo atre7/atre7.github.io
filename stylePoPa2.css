@@ -142,6 +142,11 @@ color: #000;
     height: auto;
   }
 }
+@media (orientation:landscape){
+  .intro-header{
+    height: auto;
+  }
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
