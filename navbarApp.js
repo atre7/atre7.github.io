@@ -90,7 +90,7 @@
     $(function() {
       $(window).scroll(function() {
         var actPos = $(this).scrollTop();
-        if (actPos > prevPos + 35) {
+        if (actPos > prevPos + 25) {
           moveDown = actPos;
           prevPos = actPos;
           console.log("moveDown " + actPos);
