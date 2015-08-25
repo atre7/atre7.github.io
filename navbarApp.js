@@ -5,7 +5,7 @@
   // 13:10:20
 
   $(document).ready(function() {
-
+    $('.refprosharer').hide();
 
 
     var checkVisible = function() {
@@ -104,13 +104,16 @@
       $(window).scroll(function() {
         //
         var actPos = $(this).scrollTop();
+        if (actPos < 100) {
+          $('.refprosharer').hide();
+        }
         if (actPos > prevPos + 25) {
           moveDown = actPos;
           prevPos = actPos;
           console.log("moveDown " + actPos);
           $('.navbar').fadeOut();
           $('.refprosharer').fadeOut();
-
+          $('#myNvb').collapse('hide');
         }
         if (actPos < prevPos - 35) {
           moveUp = actPos;
