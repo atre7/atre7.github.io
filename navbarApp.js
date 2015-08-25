@@ -6,7 +6,7 @@
 
   $(document).ready(function() {
 
-    function getLocation() {
+    function getLocationIP() {
       $.get("http://ipinfo.io", function(location) {
         console.log("IP " + location.loc);
 
@@ -15,8 +15,9 @@
       }, "jsonp");
 
     }
-    //getLocation();
-    $(function() {
+    getLocationIP();
+    $('#geo').click(function() {
+
       var x = document.getElementById("demo");
 
       function getLocation() {
@@ -31,8 +32,9 @@
         x.innerHTML = "Latitude: " + position.coords.latitude +
           "<br>Longitude: " + position.coords.longitude;
       }
-    });
 
+
+    }) ;
 
 
     var checkVisible = function() {
