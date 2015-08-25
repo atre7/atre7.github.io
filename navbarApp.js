@@ -91,6 +91,8 @@
     var moveUp = 0;
     $(function() {
       $(window).scroll(function() {
+
+        //
         var actPos = $(this).scrollTop();
         if (actPos > prevPos + 25) {
           moveDown = actPos;
@@ -107,6 +109,13 @@
           $('.navbar').fadeIn();
           $('.refprosharer').fadeIn();
         }
+
+        if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
+          console.log("XXX je vidiet");
+          $('.refprosharer').hide();
+        } else {
+          console.log("XXX neni vidiet");
+        }
       });
     });
 
@@ -118,11 +127,7 @@
       // $('.navbar-fixed-top').autoHiddingNavbar()
     });
 
-    if ($('#home').is(':visible')) {
-      console.log("home je vidiet");
-    } else {
-      console.log("home neni vidiet");
-    }
+
 
 
 
