@@ -6,7 +6,7 @@
 
   $(document).ready(function() {
 
-    function getLocation() {
+    function getLocationIP() {
       $.get("http://ipinfo.io", function(location) {
         console.log(location.loc);
 
