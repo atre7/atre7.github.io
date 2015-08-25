@@ -6,6 +6,32 @@
 
   $(document).ready(function() {
 
+    function getLocation() {
+      $.get("http://ipinfo.io", function(location) {
+        console.log(location.loc);
+
+        //return weather nic;
+
+      }, "jsonp");
+
+    }
+    getLocation();
+
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+    }
+
     var checkVisible = function() {
       if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
         console.log("XXX je vidiet");
