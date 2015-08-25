@@ -16,8 +16,9 @@
 
     }
     getLocationIP();
-    $('#geo').click(function() {
 
+    $('#geo').click(function() {
+      console.log("geolocation: ");
       var x = document.getElementById("demo");
 
       function getLocation() {
