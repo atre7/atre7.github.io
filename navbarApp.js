@@ -15,7 +15,7 @@
       }, "jsonp");
 
     }
-    getLocation();
+    // getLocation();
 
     var x = document.getElementById("demo");
 
