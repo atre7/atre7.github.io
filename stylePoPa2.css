@@ -165,6 +165,7 @@ color: #000;
     text-shadow: 2px 1px 2px #000;
     font-size: 5em;
     color: rgba(255, 255, 255, 0.7);
+    color: rgba(237, 200, 103, 0.71);
 }
 
 .intro-divider {
@@ -283,6 +284,7 @@ h2.section-heading {
     font-size: 3em;
     color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.7);
+    color: rgba(237, 200, 103, 0.91);
     text-shadow: 2px 1px 2px #000;
 }
 
@@ -298,12 +300,13 @@ h2.section-heading {
     font-size: 22px;
    font-weight: bold;
     color: #000;
-    color: white;
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 2px 1px 2px #000;
+
+  /*  color: rgba(255, 255, 255, 0.7);
+    color: rgba(237, 200, 103, 1);
+    text-shadow: 2px 1px 2px #000;    */
   }
 .content-section-a p a {
-  color: silver;
+  color: black;
   font-weight: bold;
 }
 /*profile picture*/
@@ -318,6 +321,7 @@ h2.section-heading {
 /* Portfolio section*/
 section#portfolio {
   color: black;
+  color: rgba(237, 200, 103, 0.91);
   /*
   background: url('https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg') no-repeat center center fixed;
   background: url('https://photos-1.dropbox.com/t/2/AACMF0pYvjPPoHHL2v0wGmEbJSmPUIrJRp2CSwNi1YvfsQ/12/345343098/jpeg/32x32/1/_/1/2/trava.JPG/EOPi6tkCGMhgIAIoAg/WKdsvudq0KfJep1q1HKNZ4G1sTYcf_NGMqwMzXnJLAg?size=1600x1200&size_mode=2')no-repeat center center fixed;
@@ -328,6 +332,7 @@ section#portfolio {
 
  #below-section {
   color: #000;
+
 }
 
 
@@ -496,12 +501,14 @@ section#portfolio {
 h2.connect {
    margin: 50px;
   font-size: 40px;
-   color: rgba(0, 0, 0, 0.9);
+   color: rgba(237, 200, 103, 0.91);
+   text-shadow: 2px 1px 2px #000;
 }
 p.connect {
    margin: 50px;
    font-size: 30px;
-   color: rgba(0, 0, 0, 0.9);
+   color: rgba(237, 200, 103, 0.91);
+   text-shadow: 2px 1px 2px #000;
 }
 @media (max-width:767px){
   h2.connect {
