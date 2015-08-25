@@ -307,7 +307,7 @@ h2.section-heading {
 /*profile picture*/
 .img-circle {
   margin-top: 150px;
-  border: 5px inset rgba(0, 0, 0, 0.84);
+  border: 5px solid rgba(0, 0, 0, 0.84);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.0);
 
 }
