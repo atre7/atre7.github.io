@@ -91,7 +91,6 @@
     var moveUp = 0;
     $(function() {
       $(window).scroll(function() {
-
         //
         var actPos = $(this).scrollTop();
         if (actPos > prevPos + 25) {
