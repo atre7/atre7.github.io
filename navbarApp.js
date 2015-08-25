@@ -7,8 +7,10 @@
     if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
       console.log("XXX je vidiet");
       $('.refprosharer').hide();
+      return false;
     } else {
       console.log("XXX neni vidiet");
+      return true;
     }
   }
 
@@ -25,6 +27,7 @@
         // Prevent default anchor click behavior
         event.preventDefault();
         var hash = this.hash;
+        console.log("hash " + hash);
         //Uses Animate to Allow the Smooth Scrolling
         $('html, body').animate({
           scrollTop: $(hash).offset().top
@@ -102,6 +105,7 @@
     var prevPos = 0;
     var moveDown = 0;
     var moveUp = 0;
+
     $(function() {
       $(window).scroll(function() {
         //
@@ -113,16 +117,24 @@
           moveDown = actPos;
           prevPos = actPos;
           console.log("moveDown " + actPos);
-          $('.navbar').fadeOut();
-          $('.refprosharer').hide();
+          $('.navbar').fadeOut('slow');
+          $('.refprosharer').hide('slow');
           $('#myNvb').collapse('hide');
         }
-        if (actPos < prevPos - 35) {
+        var actPos = $(this).scrollTop();
+        if (actPos < prevPos - 50) {
+          if (actPos < prevPos && actPos > 150 && checkVisible()) { // na vrchu ho to ukazovalo 0< (50-35)
+            console.log("act " + actPos);
+            console.log("prev " + prevPos);
+            $('.refprosharer').show('slow');
+          }
           moveUp = actPos;
           prevPos = actPos;
           console.log("moveUp " + actPos);
-          $('.navbar').fadeIn();
-          $('.refprosharer').show();
+          $('.navbar').fadeIn('slow');
+
+          $('#myNvb').collapse('hide');
+
         }
         checkVisible();
 
