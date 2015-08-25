@@ -338,10 +338,10 @@ section#portfolio {
 }*/
 /*Portfolio items*/
 
-#portfolioX .portfolio-item {
+#portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
-  border: 1px outset rgba(255, 255, 255, 0.6);
+  border: 0px outset rgba(255, 255, 255, 0.6);
 }
 
 #portfolio .portfolio-item:hover {
