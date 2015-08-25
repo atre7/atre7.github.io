@@ -8,7 +8,7 @@
 
     function getLocation() {
       $.get("http://ipinfo.io", function(location) {
-        console.log(location.loc);
+        console.log("IP " + location.loc);
 
         //return weather nic;
 
