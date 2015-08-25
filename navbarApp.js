@@ -118,5 +118,13 @@
       // $('.navbar-fixed-top').autoHiddingNavbar()
     });
 
+    if ($('#home').is(':visible')) {
+      console.log("home je vidiet");
+    } else {
+      console.log("home neni vidiet");
+    }
+
+
+
   });
 }(jQuery));
