@@ -19,6 +19,7 @@
 
     $('#geo').click(function() {
       console.log("geolocation: ");
+      getLocation();
       var x = document.getElementById("demo");
 
       function getLocation() {
