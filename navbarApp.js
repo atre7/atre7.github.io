@@ -6,6 +6,15 @@
 
   $(document).ready(function() {
 
+    var checkVisible = function() {
+      if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
+        console.log("XXX je vidiet");
+        $('.refprosharer').hide();
+      } else {
+        console.log("XXX neni vidiet");
+      }
+    }
+
     $(function() {
       //This enabled Smooth-Scroll via Click
       $(".navbar a").on('click', function(event) {
@@ -108,13 +117,8 @@
           $('.navbar').fadeIn();
           $('.refprosharer').fadeIn();
         }
+        checkVisible();
 
-        if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
-          console.log("XXX je vidiet");
-          $('.refprosharer').hide();
-        } else {
-          console.log("XXX neni vidiet");
-        }
       });
     });
 
