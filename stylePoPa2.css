@@ -252,10 +252,12 @@ hr.intro-divider {
 
     background-size: cover;
     height: 110vh;
+    height: auto;
 }
 @media (max-height:400px ){
  .content-section-a{
   height: 600px;
+  height: auto;
  }
 }
 @media (orientation:portrait){
