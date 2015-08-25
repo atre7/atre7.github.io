@@ -6,37 +6,6 @@
 
   $(document).ready(function() {
 
-    function getLocationIP() {
-      $.get("http://ipinfo.io", function(location) {
-        console.log("IP " + location.loc);
-
-        //return weather nic;
-
-      }, "jsonp");
-
-    }
-    getLocationIP();
-
-    $('#geo').click(function() {
-      console.log("geolocation: ");
-      getLocation();
-      var x = document.getElementById("demo");
-
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.watchPosition(showPosition);
-        } else {
-          x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-      }
-
-      function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-          "<br>Longitude: " + position.coords.longitude;
-      }
-
-
-    }) ;
 
 
     var checkVisible = function() {

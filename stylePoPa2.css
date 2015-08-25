@@ -291,7 +291,7 @@ h2.section-heading {
 @media (max-width:480px) {
   h2.section-heading {
     margin-top:20px;
-    font-size: 1em;
+    font-size: 3em;
   }
 }
 
@@ -332,6 +332,7 @@ section#portfolio {
 
  #below-section {
   color: #000;
+  margin-bottom: 30px;
 
 }
 
@@ -515,11 +516,13 @@ p.connect {
      margin: 10px;
     font-size: 25px;
      color: rgba(0, 0, 0, 0.9);
+     color: rgba(237, 200, 103, 0.91);
   }
   p.connect {
      margin: 10px;
      font-size: 15px;
      color: rgba(0, 0, 0, 0.9);
+     color: rgba(237, 200, 103, 0.91);
   }
 }
 @media (orientation:landscape){
