@@ -17,6 +17,7 @@
           scrollTop: $(hash).offset().top
         }, 800, function() {
           window.location.hash = hash;
+
         });
       });
 
@@ -64,7 +65,7 @@
 
     if ($(window).height() < 800) {
       // hide .navbar first
-      $(".navbar").hide();
+      //  $(".navbar").hide();
 
       // fade in .navbar
       $(function() {
