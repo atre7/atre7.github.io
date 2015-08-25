@@ -3,19 +3,21 @@
 
 (function($) {
   // 13:10:20
+  var checkVisible = function() {
+    if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
+      console.log("XXX je vidiet");
+      $('.refprosharer').hide();
+    } else {
+      console.log("XXX neni vidiet");
+    }
+  }
+
 
   $(document).ready(function() {
+
     $('.refprosharer').hide();
+    console.log("jQ start");
 
-
-    var checkVisible = function() {
-      if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
-        console.log("XXX je vidiet");
-        $('.refprosharer').hide();
-      } else {
-        console.log("XXX neni vidiet");
-      }
-    }
 
     $(function() {
       //This enabled Smooth-Scroll via Click
@@ -112,7 +114,7 @@
           prevPos = actPos;
           console.log("moveDown " + actPos);
           $('.navbar').fadeOut();
-          $('.refprosharer').fadeOut();
+          $('.refprosharer').hide();
           $('#myNvb').collapse('hide');
         }
         if (actPos < prevPos - 35) {
@@ -120,7 +122,7 @@
           prevPos = actPos;
           console.log("moveUp " + actPos);
           $('.navbar').fadeIn();
-          $('.refprosharer').fadeIn();
+          $('.refprosharer').show();
         }
         checkVisible();
 
