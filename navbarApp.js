@@ -6,7 +6,7 @@
 
   $(document).ready(function() {
 
-    function getLocationIP() {
+    function getLocation() {
       $.get("http://ipinfo.io", function(location) {
         console.log(location.loc);
 
@@ -15,7 +15,7 @@
       }, "jsonp");
 
     }
-    // getLocation();
+    getLocation();
 
     var x = document.getElementById("demo");
 
