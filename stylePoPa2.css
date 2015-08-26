@@ -118,10 +118,10 @@ color: #000;
 /*left top */
  .topnav .navbar-brand {
   background: rgba(28, 28, 28, 0.5);
-
   color: #fff;
+  letter-spacing: 0.5em;
 }
-
+  
  .topnav .navbar-brand:hover {
   background: rgba(255, 255, 255, 1);
   color: #000;

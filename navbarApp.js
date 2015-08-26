@@ -28,34 +28,47 @@
         event.preventDefault();
         var hash = this.hash;
         console.log("hash " + hash);
+        scrollTo(hash);
         //Uses Animate to Allow the Smooth Scrolling
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function() {
-          window.location.hash = hash;
+        //  $('html, body').animate({
+        //    scrollTop: $(hash).offset().top
+        //  }, 800, function() {
+        //    window.location.hash = hash;
 
-        });
+        //  });
       });
+      var pixels_per_second = 2000;
+      function scrollTo(hash) {
+        distance = Math.abs($(document.body).scrollTop() - $(hash).offset().top);
+        console.log(distance);
+        scroll_duration = (distance / pixels_per_second) * 1000;
+        console.log("d " + scroll_duration);
+        $(document.body).animate({
+          'scrollTop': $(hash).offset().top
+        }, scroll_duration);
+      }
+
 
       $(".animBottom a").on('click', function(event) {
         // Prevent default anchor click behavior
         event.preventDefault();
         var hash = this.hash;
+        scrollTo(hash);
         //Uses Animate to Allow the Smooth Scrolling
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function() {
-          window.location.hash = hash;
-        });
+        //  $('html, body').animate({
+        //    scrollTop: $(hash).offset().top
+        //  }, 800, function() {
+        //    window.location.hash = hash;
+        //  });
       });
 
 
       //End-SmoothScroll Script
-      //Enable #.active move when clicked
-      $(".nav a").on("click", function() {
-        $(".nav").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
-      });
+      //Enable #.active move when clicked remove
+      //  $(".nav a").on("click", function() {
+      //    $(".nav").find(".active").removeClass("active");
+      //      $(this).parent().addClass("active");
+      //  });
       //End .active move script
 
     });
