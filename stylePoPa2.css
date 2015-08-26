@@ -121,7 +121,7 @@ color: #000;
   color: #fff;
   letter-spacing: 0.5em;
 }
-  
+
  .topnav .navbar-brand:hover {
   background: rgba(255, 255, 255, 1);
   color: #000;
@@ -560,8 +560,8 @@ p.connect {
 
 
 footer {
-    padding-top: 30px ;
-    padding-bottom: 30px;
+    padding-top: 25px ;
+    padding-bottom: 25px;
     background: rgba(192, 192, 192, 0.9);
     background: rgba(28,28,28,1);
 }
