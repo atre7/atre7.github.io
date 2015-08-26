@@ -62,6 +62,7 @@ section.galery {
   background-size: cover;
   /*min-height: 100% !important;*/
   height: auto ;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 #galeria {
@@ -143,7 +144,7 @@ color: #000;
     background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
     background: #66ffcc center center fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -270,6 +271,7 @@ hr.intro-divider {
     background-size: cover;
     height: 110vh;
     height: auto;
+    min-height: 100vh;
 }
 @media (max-height:400px ){
  .content-section-a{
@@ -352,6 +354,7 @@ section#portfolio {
     */
    background: url('travaRes.jpg') no-repeat center center fixed ;
   background-size: cover;
+  min-height: 100vh;
 }
 
 
@@ -485,6 +488,7 @@ section#portfolio {
     height: 755px;
     height: 90vh;
     height: auto;
+    min-height: 100vh;
 }
 @media (max-height:400px ){
  .banner {
