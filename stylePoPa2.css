@@ -258,6 +258,7 @@ hr.intro-divider {
     padding: 50px 0;
     background: url('vodaRes.jpg') no-repeat center center fixed ;
     background: #8EC9C9 center center fixed;
+    background: #40c9c9 center center fixed;
 
     background-size: cover;
     height: 110vh;
@@ -331,9 +332,7 @@ p#below-section {
 .img-circle {
   margin-top: 150px;
   border: 3px solid rgba(237, 200, 103, 0.91);
-  box-shadow: 2px 1px 2px #000;
-
-}
+  }
 
 
 /* Portfolio section*/
