@@ -23,7 +23,7 @@
 
     $(function() {
       //This enabled Smooth-Scroll via Click
-      $(".navbar a").on('click', function(event) {
+      $("#myNvb a").on('click', function(event) {
         // Prevent default anchor click behavior
         event.preventDefault();
         var hash = this.hash;
