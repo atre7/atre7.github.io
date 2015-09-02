@@ -584,45 +584,48 @@ p.copyright {
 }
 
 .refprosharer {
-    opacity: 0.45;
+    opacity: 0.65;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 300px;
     z-index: 1000;
     width: 65px;
     height: auto;
     color: #666666;
     background-color: #1f94b3;
+    background-color: rgba(237, 200, 103, 0.91);
     border: 1px solid #999999;
-    border-right-width: 0;
+    border-left-width: 0;
     text-align: center;
-    -webkit-border-radius: 0 7px 7px 0;
-    -moz-border-radius: 0 7px 7px 0;
-    border-radius: 0 7px 7px 0;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    border-radius: 7px 0px 0px 7px;
 }
 
 .refprosharer:hover {
     opacity: 1;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 300px;
     z-index: 1000;
     width: 65px;
     height: auto;
     color: #666666;
+    color: rgba(237, 200, 103, 0.91);
     background-color: #dddddd;
+    background-color: rgba(237, 200, 103, 0.91);
     border: 1px solid #999999;
-    border-right-width: 0;
+    border-left-width: 0;
     text-align: center;
-    -webkit-border-radius: 0 7px 7px 0;
-    -moz-border-radius: 0 7px 7px 0;
-    border-radius: 0 7px 7px 0;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    border-radius: 7px 0px 0px 7px;
 }
 @media (orientation:landscape)and (max-width:640px){
   .refprosharer {
       opacity: 0.0;
       position: fixed;
-      left: 0;
+      right: 0;
       top: 150px;
       z-index: 1000;
       width: 65px;
@@ -642,7 +645,7 @@ p.copyright {
   .refprosharer {
       opacity: 0.0;
       position: fixed;
-      left: 0;
+      right: 0;
       top: 150px;
       z-index: 1000;
       width: 65px;
