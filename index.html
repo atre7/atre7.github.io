@@ -1,174 +1,169 @@
 <!DOCTYPE HTML>
-
 <html>
+
 <head>
-    <title>Atre | portfolio</title>
-    <meta charset="utf-8">
+  <title>Atre | portfolio</title>
+  <meta charset="utf-8">
   <!--meta name="viewport" content="width=device-width, initial-scale=1" -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <link rel="shortcut icon" href="windy12.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="stylePoPa2.css">
-    <link rel="shortcut icon" href="windy12.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="navbarApp.js" type="text/javascript"></script>
+  <script src="jquery.visible.js" charset="utf-8"></script>
+  <script>
+    ! function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + "://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }
+    (document, "script", "twitter-wjs");
+  </script>
 
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="navbarApp.js" type="text/javascript"></script>
-    <script src="jquery.visible.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="stylePoPa2.css">
 </head>
 
 <body>
   <div class="refprosharer">
-  <span></span>
-  <a href="https://twitter.com/AndrejAtre" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-twitter fa-fw"></i> <span class=" "></span></a>
-  <a href="https://github.com/atre7" target="_blank" class="btn btn-default btn-lg sideBtn "><i class="fa fa-github fa-fw"></i> <span class=" "></span></a>
-  <a href="#" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-linkedin fa-fw"></i> <span class=" "></span></a>
-  <a href="https://codepen.io/atre7/" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-codepen fa-fw"></i> <span class=" "></span></a>
-  <a href="mailto:atrerc@gmail.com" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-envelope-o fa-fw"></i> <span class=" "></span></a>
+    <a href="https://twitter.com/AndrejAtre" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-twitter fa-fw"></i> <span class=" "></span></a>
+    <a href="https://github.com/atre7" target="_blank" class="btn btn-default btn-lg sideBtn "><i class="fa fa-github fa-fw"></i> <span class=" "></span></a>
+    <a href="#" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-linkedin fa-fw"></i> <span class=" "></span></a>
+    <a href="https://codepen.io/atre7/" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-codepen fa-fw"></i> <span class=" "></span></a>
+    <a href="mailto:atrerc@gmail.com" target="_blank" class="btn btn-default btn-lg sideBtn"><i class="fa fa-envelope-o fa-fw"></i> <span class=" "></span></a>
   </div>
-<!-- Navigation folder doc index -->
-    <!--nav  class="navbar navbar-default navbar-fixed-top topnav" role="navigation" role je nutne ked to neni v nav ale div -->
-      <nav  class="navbar navbar-default navbar-fixed-top topnav"  >
+  <!-- Navigation folder doc index -->
+  <!--nav  class="navbar navbar-default navbar-fixed-top topnav" role="navigation" role je nutne ked to neni v nav ale div -->
+  <nav class="navbar navbar-default navbar-fixed-top topnav">
+    <div class="container topnav">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button id="menuBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNvb">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <!-- <span class="icon-bar"></span> -->
+        </button>
 
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="menuBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNvb">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <a class="navbar-brand topnav " href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank">Andrej ATRE</a>
 
-                <a class="navbar-brand topnav " href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank">Andrej ATRE</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="myNvb">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#home"><i class="fa fa-home fa-fw"></i> <span> Home</span></a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user fa-fw"></i> <span> About</span></a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="fa fa-spinner fa-spin"></i> <span>   Work</span></a>
+          </li>
+          <li>
+            <a href="#galery"><i class="fa fa-picture-o fa-fw"></i> <span> Galery</span></a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-envelope-o fa-fw"></i> <span> Contact</span></a>
+          </li>
 
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="myNvb">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#home"><i class="fa fa-home fa-fw"></i><span> Home</span> </a>
-                    </li>
-                    <li>
-                        <a href="#about"><i class="fa fa-user fa-fw"></i> <span> About</span></a>
-                    </li>
-                      <li>
-                        <a href="#portfolio"><i class="fa fa-spinner fa-spin"></i><span> Portfolio</span> </a>
-                      </li>
-                    <li>
-                        <a href="#galery"><i class="fa fa-picture-o fa-fw"></i><span> Galery</span> </a>
-                    </li>
-                   <li>
-                        <a href="#contact"><i class="fa fa-envelope-o fa-fw"></i> <span> Contact</span></a>
-                    </li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-<div class="golddiv"></div>
-    </nav>
-
-
-    <!-- Header -->
-    <!--a name="home"></a -->
-    <section id="home">
-      <div class="testVisible">
-
-
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1 class="visibleTriger">Atre Web Design </h1>
-
-                        <h2>Where life is fun</h2>
-                        <h3>future is now</h3>
-
-
-                        <hr class="intro-divider ">
-                        <ul class="list-inline intro-social-buttons ">
-                            <li>
-                                <a href="http://www.freecodecamp.com/atre7" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/AndrejAtre" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/atre7" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
-                            </li>
-                            <li>
-                              <a href="https://codepen.io/atre7/" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-codepen fa-fw"></i> <span class="visibleTriger3 "></span></a>
-                            </li>
-                            <li>
-                                <a href="http://www.codecademy.com/atre" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-code fa-fw"></i> <span class="network-name">Codecademy</span></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.intro-header -->
-  </div>
-
-  </section>
- <!-- Page Content -->
-
-	<!--a  name="about"></a -->
-    <div id="about" class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-
-                    <div class="clearfix"></div>
-                  <h2 class="section-heading visibleTriger2">Andrej Atre</h2>    <br>
-
-                    <p class="lead">I'm a <a class="link" target="_blank" href="http://www.freecodecamp.com/atre7">self taught</a> web designer, developer, based in Bratislava.<br>
-                    I'm currently start building web and mobile applications.<br>
-                    My passion is to use technology based solutions, to help solve real world challenges.<br>
-                    Competences:<br>
-                    Languages and Frameworks:<br>
-                    Javascript, HTML5, CSS3, jQuery, Bootstrap3, Angular.js, JAVA SE.<br>
-                    Tools & expertise:<br>
-                    Git, Responsive Web Design, Agile Methodologies.
-                    </p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6 ">
-                    <img class="img-circle img-responsive"
-                    src='profilRes.jpg' width="350" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-
+    <!-- /.container -->
     <div class="golddiv"></div>
+  </nav>
+  <!-- Header -->
+  <!--a name="home"></a -->
+  <section id="home">
+    <div class="testVisible">
+      <div class="intro-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="intro-message">
+                <h1 class="visibleTriger">Atre Web Design </h1>
+                <h2>Where life is fun</h2>
+                <h3>future is now</h3>
+                <hr class="intro-divider ">
+                <ul class="list-inline intro-social-buttons ">
+                  <li>
+                    <a href="http://www.freecodecamp.com/atre7" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/AndrejAtre" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/atre7" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+                  </li>
+                  <li>
+                    <a href="https://codepen.io/atre7/" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-codepen fa-fw"></i> <span class="visibleTriger3 "></span></a>
+                  </li>
+                  <li>
+                    <a href="http://www.codecademy.com/atre" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-code fa-fw"></i> <span class="network-name">Codecademy</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.intro-header -->
+    </div>
+  </section>
+  <!-- Page Content -->
+  <!--a  name="about"></a -->
+  <div id="about" class="content-section-a">
 
-<!--
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <div class="clearfix"></div>
+          <h2 class="section-heading visibleTriger2">Andrej Atre</h2>
+          <br>
+          <p class="lead">I'm a <a class="link" target="_blank" href="http://www.freecodecamp.com/atre7">self taught</a> web designer, developer, based in Bratislava.
+            <br> I'm currently start building web and mobile applications.
+            <br> My passion is to use technology based solutions, to help solve real world challenges.
+            <br> Competences:
+            <br> Languages and Frameworks:
+            <br> Javascript, HTML5, CSS3, jQuery, Bootstrap3, Angular.js, JAVA SE.
+            <br> Tools & expertise:
+            <br> Git, Responsive Web Design, Agile Methodologies.
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6 ">
+          <img class="img-circle img-responsive" src='profilRes.jpg' width="350" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+
+  <div class="golddiv"></div>
+
+  <!--
  <div class="blackdiv"></div>
 <div class="blackstripe"></div>
 
@@ -177,308 +172,278 @@
 <div id="blackstripe4"></div>
 <div id="blackstripe5"></div>
 -->
-     <!-- Portfolio Grid Section   -->
-   <!--a  name="portfolio"></a -->
-    <section id="portfolio" class="bg-light-gray bounds">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Atre's Portfolio.</h2>
-                    <p id="below-section" class="section-subheading ">Below you'll find some of my recent work.</p>
-                </div>
-            </div>
-          <!-- Portfolio img1   -->
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
-            <a href="http://atre7.github.io/Random" target="_blank" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                          <i class="fa fa-fire fa-4x"></i>
-                      </div>
-                  </div>
-                  <img src="randomScreen.png" class="img-responsive"  alt="" >
-
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Random quote</h4>
-                  <p  class="text-muted small-text">Javascript</p>
-              </div>
-          </div>
-              <!-- End of Portfolio img1 -->
-
-              <!-- Portfolio img2 -->
-
-
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="http://atre7.github.io" class="portfolio-link" target="_blank" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-fire fa-4x"></i>
-                                </div>
-                            </div>
-                            <img src="personalWebsitesRes.png" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Personal website</h4>
-                            <p  class="text-muted small-text">HTML5/CSS3/Bootstrap/Javascript/jQuery</p>
-                        </div>
-                    </div>
-              <!-- End of Portfolio img2 -->
-
-              <!-- Portfolio img3 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="http://atre7.github.io/WeatherFCC" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="weather.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Local weather</h4>
-                        <p  class="text-muted small-text">Javascript/open project</p>
-                    </div>
-                </div>
-              <!-- End of Portfolio img3 -->
-
-              <!-- Portfolio img4 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="colorRes.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>project #4</h4>
-                        <p  class="text-muted small-text">Angular.js</p>
-                    </div>
-                </div>
-              <!-- End of Portfolio img4 -->
-
-              <!-- Portfolio img5 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="colorRes.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>project #5</h4>
-                        <p  class="text-muted small-text">Bootstrap and Javascript</p>
-                    </div>
-                </div>
-              <!-- End of Portfolio img5 -->
-
-              <!-- Portfolio img6 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="colorRes.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>project #6</h4>
-                        <p  class="text-muted small-text">node.js</p>
-                    </div>
-                </div>
-              <!-- End of Portfolio img6 -->
-            </div>
+  <!-- Portfolio Grid Section   -->
+  <!--a  name="portfolio"></a -->
+  <section id="portfolio" class="bg-light-gray bounds">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Atre's Portfolio.</h2>
+          <p id="below-section" class="section-subheading ">Below you'll find some of my recent work.</p>
         </div>
-    </section>
-    <!-- carousel  -->
+      </div>
+      <!-- Portfolio img1   -->
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+          <a href="http://atre7.github.io/Random" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="randomScreen.png" class="img-responsive" alt="">
+          <div class="portfolio-caption">
+            <h4>Random quote</h4>
+            <p class="text-muted small-text">Javascript</p>
+          </div>
+          </a>
+        </div>
+        <!-- End of Portfolio img1 -->
+
+        <!-- Portfolio img2 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="http://atre7.github.io" class="portfolio-link" target="_blank" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="personalWebsitesRes.png" class="img-responsive" alt="">
+
+          <div class="portfolio-caption">
+            <h4>Personal website</h4>
+            <p class="text-muted small-text">HTML5/CSS3/Bootstrap/Javascript/jQuery</p>
+          </div>
+          </a>
+        </div>
+        <!-- End of Portfolio img2 -->
+
+        <!-- Portfolio img3 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="http://atre7.github.io/WeatherFCC" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="weather.png" class="img-responsive" alt="">
+
+          <div class="portfolio-caption">
+            <h4>Local weather</h4>
+            <p class="text-muted small-text">Javascript/open project</p>
+          </div>
+          </a>
+        </div>
+        <!-- End of Portfolio img3 -->
+
+        <!-- Portfolio img4 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="colorRes.jpg" class="img-responsive" alt="">
+
+          <div class="portfolio-caption">
+            <h4>project #4</h4>
+            <p class="text-muted small-text">Angular.js</p>
+          </div>
+          </a>
+        </div>
+        <!-- End of Portfolio img4 -->
+
+        <!-- Portfolio img5 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="colorRes.jpg" class="img-responsive" alt="">
+
+          <div class="portfolio-caption">
+            <h4>project #5</h4>
+            <p class="text-muted small-text">Bootstrap and Javascript</p>
+          </div>
+            </a>
+        </div>
+        <!-- End of Portfolio img5 -->
+
+        <!-- Portfolio img6 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://drive.google.com/file/d/0B9Y_2NYi5k50al90Qm05QmJkaGM/view?usp=sharing" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-diamond fa-4x"></i>
+              </div>
+            </div>
+            <img src="colorRes.jpg" class="img-responsive" alt="">
+
+          <div class="portfolio-caption">
+            <h4>project #6</h4>
+            <p class="text-muted small-text">node.js</p>
+          </div>
+          </a>
+        </div>
+        <!-- End of Portfolio img6 -->
+      </div>
+    </div>
+  </section>
+  <!-- carousel  -->
 
 
-   <div class="blackstripe"></div>
+  <div class="blackstripe"></div>
   <!--a name="galery"></a -->
   <section id="galery" class="galery">
 
-      <div id="galeria" class="container">
-          <div class="row">
-              <div class="col-lg-12 col-md-12 col-xs-12">
-              <div class="MaxHeight">
-                 <div id="carousel-example-generic" class="carousel slide"  data-ride="carousel" >
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-  </ol>
+    <div id="galeria" class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <div class="MaxHeight">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+              </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
 
-    <div class="item active img-responsive">
-      <img src="carousel/bergres.jpg" class=" img-responsive "  alt="...">
-      <div class="carousel-caption">
-        <h3>Berg</h3>
-        <p>austria</p>
-      </div>
-    </div>
-
-    <div class="item img-responsive">
-      <img src="carousel/2res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Lankanfinolu</h3>
-        <p>maldiven</p>
-      </div>
-    </div>
-    <div class="item img-responsive">
-      <img src="carousel/3res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Liptov</h3>
-        <p>slovakia</p>
-      </div>
-    </div>
-    <div class="item img-responsive">
-      <img src="carousel/4res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Donovaly</h3>
-        <p>slovakia</p>
-      </div>
-    </div>
-    <div class="item img-responsive">
-      <img src="carousel/5res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Tatry</h3>
-        <p>slovakia</p>
-      </div>
-    </div>
-    <div class="item img-responsive">
-      <img src="carousel/6res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Lamac</h3>
-        <p>slovakia</p>
-      </div>
-    </div>
-    <div class="item img-responsive">
-      <img src="carousel/7res.jpg" class=" img-responsive " alt="...">
-      <div class="carousel-caption">
-        <h3>Berg</h3>
-        <p>austria</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+                <div class="item active img-responsive">
+                  <img src="carousel/bergres.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Berg</h3>
+                    <p>Austria</p>
+                  </div>
                 </div>
-              </div>    <!-- grid -->
-          </div>    <!-- .row -->
-      </div> <!-- .container -->
+
+                <div class="item img-responsive">
+                  <img src="carousel/2res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Lankanfinolu</h3>
+                    <p>Maldiven</p>
+                  </div>
+                </div>
+                <div class="item img-responsive">
+                  <img src="carousel/3res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Liptov</h3>
+                    <p>Slovakia</p>
+                  </div>
+                </div>
+                <div class="item img-responsive">
+                  <img src="carousel/4res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Donovaly</h3>
+                    <p>Slovakia</p>
+                  </div>
+                </div>
+                <div class="item img-responsive">
+                  <img src="carousel/5res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Tatry</h3>
+                    <p>Slovakia</p>
+                  </div>
+                </div>
+                <div class="item img-responsive">
+                  <img src="carousel/6res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Lamac</h3>
+                    <p>Slovakia</p>
+                  </div>
+                </div>
+                <div class="item img-responsive">
+                  <img src="carousel/7res.jpg" class=" img-responsive " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Berg</h3>
+                    <p>Austria</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- grid -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
   </section>
-<!-- carousel  -->
-<div class="blackstripe"></div>
-	<!--a  name="contact"></a -->
-    <div id="contact" class="banner">
+  <!-- carousel  -->
+  <div class="blackstripe"></div>
+  <!--a  name="contact"></a -->
+  <div id="contact" class="banner">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row">
-                <div class="col-sm-6">
-                  <h2 class="connect">Connect with Andrej </h2>
-                  <p class="connect" >atrerc@gmail.com</p>
-
-                </div>
-              <br>
-
-                <div  class="col-sm-6 ">
-                  <a class="twitter-timeline" href="https://twitter.com/AndrejAtre" data-widget-id="635714313840410624">Tweets by @AndrejAtre</a>
-                  <script>!function(d,s,id) {
-                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                    if(!d.getElementById(id)){js=d.createElement(s);
-                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);
-                  }}
-                  (document,"script","twitter-wjs");
-                  </script>
-
-  </div>
-            </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="connect">Connect with Andrej </h2>
+          <p class="connect">atrerc@gmail.com</p>
 
         </div>
-        <!-- /.container                       <ul class="list-inline banner-social-buttons">
-                                <li>
-                                        <a href="https://twitter.com/AndrejAtre" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/atre7" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.freecodecamp.com/atre7" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
-                                    </li>
+        <br>
 
-                            </ul>
-                      -->
+        <div class="col-sm-6 ">
+          <a class="twitter-timeline" href="https://twitter.com/AndrejAtre" data-widget-id="635714313840410624">Tweets by @AndrejAtre</a>
+
+        </div>
+      </div>
 
     </div>
-    <!-- /.banner -->
 
-    <!-- Footer -->
-    <footer>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul  class="list-inline animBottom small-text">
-                        <li>
-                            <a class="small-text" href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a class="small-text" href="#about">About</a>
-                        </li>
-
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a class="small-text" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a class="small-text" href="#galery">Galery</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                    <div class="col-lg-6">
-                        <div  class="list-inline small-text">
-
-                          <p class="copyright small-text">Copyright &copy; Atre Design 2015. </p>
-
-
-                    </div>
-                </div>
-            </div>
+  </div>
+  <!-- /.banner -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-inline animBottom small-text">
+            <li>
+              <a class="small-text" href="#home">Home</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a class="small-text" href="#about">About</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a class="small-text" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a class="small-text" href="#galery">Galery</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-
-
-
+        <div class="col-sm-6">
+          <div class="list-inline small-text">
+            <p class="copyright small-text">Copyright &copy; Atre Design 2015. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
