@@ -1,10 +1,14 @@
+  * {
+    /*outline: 1px solid black;*/
+  }
   body, html {
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
   }
   body, h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
+    /*font-family: 'Molle',cursive;*/
+    color: rgba(195, 182, 0, 1);
   }
   .icon-bar {
     background-color: white !important;
@@ -18,7 +22,7 @@
   }
   .golddiv {
     background: rgba(237, 200, 103, 0.91);
-    border: 1px solid rgba(237, 200, 103, 0.91);
+    border: 2px solid rgba(237, 200, 103, 0.91);
   }
   .blackstripe {
     background: black;
@@ -46,8 +50,8 @@
   section.galery {
     padding: 50px 50px 50px 50px;
     background: #000000 no-repeat center center fixed;
+    background: linear-gradient(120deg, #0fa9a8,#bb58df);
     background-size: cover;
-    /*min-height: 100% !important;*/
     height: auto;
     min-height: 100vh;
     box-sizing: border-box;
@@ -61,31 +65,9 @@
       height: auto;
     }
   }
-  /*
-.img-responsive {
-  display:block;
-  height:200;
-  max-width:100% ;
-}
-
-.MaxHeight {
-  height: 50vh !important;
-}
-
-.carouselFoto img {
-  width: auto;
-  height: 300px;
-  max-height: 300px;
-}
-*/
-
   .topnav {
     font-size: 16px;
     background: rgba(28, 28, 28, 1);
-    /*
-   border: 1px outset rgba(28, 28, 28, 0);
-   border: 1px solid rgba(237, 200, 103, 0.91);
-   box-shadow: 0px 3px rgba(200, 200, 200, 0.1); */
     color: #fff;
   }
   /*right top*/
@@ -116,16 +98,20 @@
   /*top background*/
 
   .intro-header {
-    /* height: 855px; */
     padding-top: 50px;
-    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background: #66ffcc center center fixed;
-    background-size: cover;
-    min-height: 100vh;
+    /*color: #f8f8f8;*/
+    background: #66ffcc;
+    background: linear-gradient(120deg, #8217b7,#edaa9c);
+
+    background: linear-gradient(120deg, #0fa9a8,#bb58df);
+
+    /*background: linear-gradient(120deg, #0da16e,#e7dd4b);*/
+
+    background: linear-gradient(120deg, #e02d6f,#fc963f);
+
+    min-height: 90vh;
   }
   @media (max-height:400px) {
     .intro-header {
@@ -145,7 +131,7 @@
   .intro-message {
     position: relative;
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 7%;
   }
   /*Big header*/
 
@@ -153,8 +139,7 @@
     margin-top: -50px;
     text-shadow: 2px 1px 2px #000;
     font-size: 5em;
-    color: rgba(255, 255, 255, 0.7);
-    color: rgba(237, 200, 103, 0.71);
+    color: rgba(195, 182, 0, 1);
   }
   .intro-divider {
     width: 400px;
@@ -173,12 +158,12 @@
     color: black;
     opacity: 0.6;
   }
-  @media(max-width:767px) {
+  @media (max-width:991px) {
     .intro-message {
       padding-bottom: 15%;
     }
     .intro-message > h1 {
-      font-size: 3em;
+      font-size: 5em;
     }
     ul.intro-social-buttons > li {
       display: block;
@@ -192,6 +177,7 @@
       width: 100%;
     }
   }
+
   /*line*/
 
   hr.intro-divider {
@@ -204,47 +190,101 @@
   .btn {
     display: inline-block;
     color: #000;
-    border: 2px outset rgba(0, 0, 0, 0.9);
-    opacity: 0.6;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);*/
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
+    font-weight: bold;
   }
   .btn:hover {
     color: #000;
-    border: 2px outset rgba(0, 0, 0, 0.9);
     background: #C0C0C0;
-    opacity: 1;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: crosshair;
+    overflow: hidden;
+    outline: none;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
     transition: 0.2s;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);*/
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
   }
+  .sideBtn {
+    background-color: rgba(195, 182, 0, 1);
+  }
+  .refprosharer {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 1000;
+    width: 65px;
+    height: auto;
+    border-left-width: 0;
+    text-align: center;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    border-radius: 7px 0px 0px 7px;
+  }
   .sideBtn:hover {
-    color: #000;
-    border: 2px outset rgba(0, 0, 0, 0.9);
-    background: #C0C0C0;
-    opacity: 1;
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-    transition: 0.6s;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px outset black;
+    transform: scale(1);
+  }
+  .refHomeLeft {
+    position: fixed;
+    left: 0;
+    top: 350px;
+    z-index: 1000;
+    width: 65px;
+    height: auto;
+    border-left-width: 0;
+    text-align: center;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    border-radius: 7px 0px 0px 7px;
+  }
+  .refHomeDown {
+    position: fixed;
+    right: 100px;
+    bottom: 0px;
+    z-index: 1000;
+    width: 65px;
+    height: auto;
+    border-left-width: 0;
+    text-align: center;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    border-radius: 7px 0px 0px 7px;
+  }
+  .navBtn{
+    background-color: rgba(195, 182, 0, 1);
+  }
+  .navBtn:hover,
+  .navBtn:focus{
+    color: rgba(195, 182, 0, 1);
+    transform: scale(1.3);
+  }
+   .navBtn:active:hover{
+    color: rgba(195, 182, 0, 1);
+
+    transform: scale(1.3);
   }
   /* about section 2*/
 
   .content-section-a {
-    padding: 50px 0;
-    background: url('vodaRes.jpg') no-repeat center center fixed;
-    background: #8EC9C9 center center fixed;
-    background: #40c9c9 center center fixed;
-    background-size: cover;
-    height: 110vh;
+    padding: 50px 0 100px 0;
+    /*background: url('vodaRes.jpg') no-repeat center center fixed;*/
+    /*background: #8EC9C9 ;*/
+    background: #40c9c9 ;
+    /*background-size: cover;*/
+    background-color: rgba(195, 182, 0, 0.79);
+    background: linear-gradient(120deg, #8217b7,#edaa9c);
     height: auto;
-    min-height: 100vh;
   }
   @media (max-height:400px) {
     .content-section-a {
@@ -275,8 +315,6 @@
     margin-top: 100px;
     font-size: 3em;
     letter-spacing: 0.3em;
-    color: rgba(0, 0, 0, 0.9);
-    color: rgba(255, 255, 255, 0.7);
     color: rgba(237, 200, 103, 0.91);
     text-shadow: 2px 1px 2px #000;
   }
@@ -286,65 +324,67 @@
     opacity: 0.9;
     margin-bottom: 30px;
   }
-  @media (max-width:480px) {
-    h2.section-heading {
-      margin-top: 20px;
-      font-size: 3em;
-    }
-  }
   /*text*/
 
   .content-section-a p {
     font-size: 22px;
     color: #000;
-    /*  color: rgba(87, 86, 86, 1);
-
-    color: rgba(255, 255, 255, 0.7);
-    color: rgba(237, 200, 103, 1);
-    text-shadow: 2px 1px 2px #000;    */
   }
   .content-section-a p a {
     color: black;
     font-weight: bold;
   }
-  /*profile picture*/
+  /*profile img*/
 
   .img-circle {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 150px;
-    /*  border: 3px solid rgba(237, 200, 103, 0.91);    */
     border: 3px solid rgba(210, 208, 208, 1);
-    box-shadow: 0 0 0 10px #04acac;
+    /*box-shadow: 0 0 0 10px rgba(102, 255, 204, 0.88);*/
+    box-shadow: 0 0 0 10px #0fa9a8;
+
   }
-  /* Portfolio section*/
+  /* Portfolio */
 
   section#portfolio {
-    color: black;
-    color: rgba(237, 200, 103, 0.91);
-    /*
-  background: url('https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-  background: url('https://photos-1.dropbox.com/t/2/AACMF0pYvjPPoHHL2v0wGmEbJSmPUIrJRp2CSwNi1YvfsQ/12/345343098/jpeg/32x32/1/_/1/2/trava.JPG/EOPi6tkCGMhgIAIoAg/WKdsvudq0KfJep1q1HKNZ4G1sTYcf_NGMqwMzXnJLAg?size=1600x1200&size_mode=2')no-repeat center center fixed;
-    */
+    background-color: rgba(237, 200, 103, 0.91);
+    /*background: url('travaRes.jpg') no-repeat center center fixed;*/
+    /*background-size: cover;*/
+    background: linear-gradient(120deg, #0fa9a8,#bb58df);
+  }
+  section#portfolio h2.section-heading {
+    margin-top: 100px;
+    font-size: 3.5em;
+    letter-spacing: 0.3em;
+    color: white;
+    text-shadow: 2px 1px 2px #000;
+  }
+  @media (max-width:480px) {
+    section#portfolio h2.section-heading {
+      font-size: 3em;
+    }
+  }
+  section#portfolio p {
+    letter-spacing: 0.04em;
+    color: white;
+    text-shadow: 2px 1px 2px #000;
+  }
+  /*Portfolio holder*/
+
+  #blurBg {
     background: url('travaRes.jpg') no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
-  /*.portfolio-item {
-  overflow: hidden;
-  padding: 7px;
-  color: white;
-  height: 308px;
-}*/
-  /*Portfolio items*/
-
   #portfolio .portfolio-item {
     margin: 0 0 15px;
     right: 0;
     border: 0px outset rgba(255, 255, 255, 0.6);
-  }
-  #portfolio .portfolio-item:hover {
-    transition: 0.3s;
-    /*box-shadow: 5px 10px 5px rgba(0,0,0,0.9);*/
-    /*box-shadow: 5px 10px 5px rgba(237, 200, 103, 0.91);*/
   }
   #portfolio .portfolio-item .portfolio-link {
     display: block;
@@ -358,12 +398,13 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: all ease .3s;
-    -webkit-transition: all ease .3s;
-    -moz-transition: all ease .3s,
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s,
   }
   #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
+    -webkit-filter: blur(5px);
   }
   #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
@@ -415,15 +456,10 @@
   }
   .banner {
     padding-top: 100px;
-    padding-bottom: 10px;
-    height: 700px;
-    background: url('https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background: url('colorBack2Res.jpg') no-repeat center center;
-    background-size: cover;
-    height: 755px;
-    height: 90vh;
-    height: auto;
-    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: rgba(189, 254, 49, 0.7);
+    background: linear-gradient(20deg, #0da16e,#e7dd4b);
+    min-height: 40vh;
   }
   @media (max-height:400px) {
     .banner {
@@ -468,13 +504,12 @@
     h2.connect {
       margin: 10px;
       font-size: 2.5em;
-      color: rgba(0, 0, 0, 0.9);
       color: rgba(237, 200, 103, 0.91);
     }
     p.connect {
       margin: 10px;
       font-size: 2em;
-      color: rgba(0, 0, 0, 0.9);
+      letter-spacing: 0.07em;
       color: rgba(237, 200, 103, 0.91);
     }
   }
@@ -487,8 +522,8 @@
   footer {
     padding-top: 25px;
     padding-bottom: 25px;
-    background: rgba(192, 192, 192, 0.9);
-    background: rgba(28, 28, 28, 1);
+    background: rgb(28, 28, 28);
+
   }
   p.copyright {
     margin: 0 25px 0;
@@ -499,27 +534,6 @@
   }
   .small-text {
     color: white;
-  }
-  .refprosharer {
-    opacity: 0.65;
-    position: fixed;
-    right: 0;
-    top: 300px;
-    z-index: 1000;
-    width: 65px;
-    height: auto;
-    color: #666666;
-    background-color: #1f94b3;
-    background-color: rgba(237, 200, 103, 0.91);
-    border: 1px solid #999999;
-    border-left-width: 0;
-    text-align: center;
-    -webkit-border-radius: 7px 0px 0px 7px;
-    -moz-border-radius: 7px 0px 0px 7px;
-    border-radius: 7px 0px 0px 7px;
-  }
-  .refprosharer:hover {
-    opacity: 1;
   }
   @media (orientation: landscape)and (max-width: 640px) {
     .refprosharer {
@@ -533,7 +547,6 @@
   }
   @media (max-width:640px) {
     .refprosharer {
-      opacity: 0.0;
       display: none;
     }
     .refprosharer:hover {

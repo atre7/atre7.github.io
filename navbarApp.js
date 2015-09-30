@@ -6,7 +6,7 @@
   var checkVisible = function() {
     if ($('.visibleTriger').visible() || $('.visibleTriger2').visible() || $('.visibleTriger3').visible()) {
       console.log("XXX je vidiet");
-      $('.refprosharer').hide();
+      $('#visibleBtn').hide();
       return false;
     } else {
       console.log("XXX neni vidiet");
@@ -17,18 +17,22 @@
 
   $(document).ready(function() {
 
-    $('.refprosharer').hide();
+    $('#visibleBtn').hide();
     console.log("jQ start");
-
+    $('#blurBg').height( $('#portfolio').height());
 
     $(function() {
       //This enabled Smooth-Scroll via Click
       $("#myNvb a").on('click', function(event) {
+        if(this.hash !==""){
         // Prevent default anchor click behavior
         event.preventDefault();
         var hash = this.hash;
         console.log("hash " + hash);
+        console.log(hash ==="");
+
         scrollTo(hash);
+      }
         //Uses Animate to Allow the Smooth Scrolling
         //  $('html, body').animate({
         //    scrollTop: $(hash).offset().top
@@ -39,6 +43,7 @@
       });
       var pixels_per_second = 2000;
       function scrollTo(hash) {
+
         distance = Math.abs($(document.body).scrollTop() - $(hash).offset().top);
         console.log(distance);
         scroll_duration = (distance / pixels_per_second) * 1000;
@@ -50,6 +55,7 @@
 
 
       $(".animBottom a").on('click', function(event) {
+        if(this.hash !==""){
         // Prevent default anchor click behavior
         event.preventDefault();
         var hash = this.hash;
@@ -60,7 +66,7 @@
         //  }, 800, function() {
         //    window.location.hash = hash;
         //  });
-      });
+      }});
 
 
       //End-SmoothScroll Script
@@ -84,6 +90,7 @@
     $('#pHeightSreen').text("screen height : " + screen.height);
     // on resize
     $(window).resize(function() {
+        $('#blurBg').height( $('#portfolio').height());
       $('#pWidthWindow').text("windov width : " + $(window).width());
       $('#pHeightWindow').text("window height : " + $(window).height());
       $('#pWidthScreen').text("screen width : " + screen.width);
@@ -124,14 +131,14 @@
         //
         var actPos = $(this).scrollTop();
         if (actPos < 100) {
-          $('.refprosharer').hide();
+          $('#visibleBtn').hide();
         }
         if (actPos > prevPos + 25) {
           moveDown = actPos;
           prevPos = actPos;
           console.log("moveDown " + actPos);
           $('.navbar').fadeOut('slow');
-          $('.refprosharer').hide('slow');
+          $('#visibleBtn').hide('slow');
           $('#myNvb').collapse('hide');
         }
         var actPos = $(this).scrollTop();
@@ -139,7 +146,7 @@
           if (actPos < prevPos && actPos > 150 && checkVisible()) { // na vrchu ho to ukazovalo 0< (50-35)
             console.log("act " + actPos);
             console.log("prev " + prevPos);
-            $('.refprosharer').show('slow');
+            $('#visibleBtn').show('slow');
           }
           moveUp = actPos;
           prevPos = actPos;
